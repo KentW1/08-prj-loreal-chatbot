@@ -8,9 +8,42 @@
 /* —— body + fonts —— */
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #333;
+  color: #ffffff;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
+  background-color: #000000;
+  background-image:
+    radial-gradient(
+      circle at center,
+      transparent 0 72px,
+      rgba(227, 165, 53, 0.95) 72px 78px,
+      transparent 78px 140px
+    ),
+    radial-gradient(
+      circle at center,
+      transparent 0 140px,
+      rgba(227, 165, 53, 0.85) 140px 146px,
+      transparent 146px 208px
+    ),
+    radial-gradient(
+      circle at center,
+      transparent 0 208px,
+      rgba(227, 165, 53, 0.75) 208px 214px,
+      transparent 214px 276px
+    ),
+    radial-gradient(
+      circle at center,
+      transparent 0 276px,
+      rgba(227, 165, 53, 0.65) 276px 282px,
+      transparent 282px 344px
+    ),
+    radial-gradient(
+      circle at center,
+      transparent 0 344px,
+      rgba(227, 165, 53, 0.55) 344px 350px,
+      transparent 350px 412px
+    );
 }
 
 .page-wrapper {
@@ -24,10 +57,21 @@ body {
   padding-top: 50px;
 }
 
+.site-logo {
+  width: 120px;
+  max-width: 40vw;
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  margin-bottom: 14px;
+}
+
 .site-title {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 /* chat window */
@@ -37,12 +81,13 @@ body {
 
 .chat-window {
   height: 360px;
-  border: 1px solid #000;
+  border: 1px solid #d4af37;
   padding: 20px;
   font-size: 18px;
   line-height: 1.5;
   overflow-y: auto;
-  background: #fafafa;
+  background: rgba(12, 12, 12, 0.92);
+  color: #ffffff;
   white-space: pre-line;
   display: flex;
   flex-direction: column;
@@ -60,15 +105,16 @@ body {
 }
 
 .msg.user {
-  color: #fff;
-  background: #000;
+  color: #000000;
+  background: #d4af37;
   align-self: flex-end;
   border-bottom-right-radius: 6px;
 }
 
 .msg.ai {
-  color: #222;
-  background: #e9ecef;
+  color: #ffffff;
+  background: #202020;
+  border: 1px solid #3b3b3b;
   align-self: flex-start;
   border-bottom-left-radius: 6px;
 }
@@ -83,19 +129,25 @@ body {
 .chat-form input {
   flex: 1;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #d4af37;
+  background: #111111;
+  color: #ffffff;
   font-size: 18px;
 }
 
+.chat-form input::placeholder {
+  color: #c7c7c7;
+}
+
 .chat-form input:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #d4af37;
   outline-offset: 2px;
 }
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
-  color: #fff;
+  background: #d4af37;
+  color: #000000;
   border: none;
   padding: 12px;
   width: 48px;
@@ -112,11 +164,11 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: #c19b2d;
 }
 
 .chat-form button:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #d4af37;
   outline-offset: 2px;
 }
 
@@ -138,7 +190,7 @@ body {
   margin: 60px 0 40px;
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: #ffffff;
 }
 
 .site-footer nav {
@@ -147,10 +199,10 @@ body {
 
 .site-footer a {
   margin: 0 8px;
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: #666666;
+  color: #d4af37;
 }
